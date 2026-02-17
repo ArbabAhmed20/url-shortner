@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: shortner-sb
+  datasource:
+    url: jdbc:mysql://localhost:3306/urlshortnerdb
+    username: root
+    password: arbab2001
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update   # Options: none, validate, update, create, create-drop
+    show-sql: true       # Show SQL queries in console
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
