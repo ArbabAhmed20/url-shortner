@@ -1,5 +1,6 @@
 package com.url.shortner.controller;
 
+import com.url.shortner.dto.LoginRequest;
 import com.url.shortner.dto.RegisterRequest;
 import com.url.shortner.models.User;
 import com.url.shortner.service.UserService;
@@ -16,6 +17,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
 
     private UserService userService;
+
+    @PostMapping("/public/login")
+    public ResponseEntity<?> loginUser(@RequestBody LoginRequest loginRequest){
+        return ResponseEntity.ok(userService.authenticateUser(loginRequest));
+    }
+
 
     @PostMapping("/public/register")
     public ResponseEntity<?> registerUser(@RequestBody RegisterRequest registerRequest){
