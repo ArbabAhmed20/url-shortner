@@ -15,7 +15,7 @@ public class UrlMapping {
 
     private String originalUrl;
 
-    private String shortUlr;
+    private String shortUrl;
 
     private int clickCount = 0;
 
