@@ -23,3 +23,7 @@ logging:
 jwt:
   secret: 22388c9ff3fc3b5c89928fb8d9f0dc5063245e2aec5f3796e523bbef88f99911030e6eb07ee6807fb3205f0cabf5be628fa21ecfc3306d5aea2fb7b300caa23f #This is a 64Bit key because the 32Bit was not accepting.
   expiration: 172800000
+
+#FrontEnd URL
+frontend:
+  url: http://localhost:5173/
